@@ -1,0 +1,317 @@
+/*
+Theme Name: Western Oregon Botanicals 
+Author: Josh
+Version: 1.0
+*/
+
+body {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	/*text-align: center;*/
+	background-image: url("img/background1.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+
+/* --------------------------------------------------------------CSS GRID---------------------------------------------------- */
+
+* {
+        margin: 0;
+        padding: 0;
+}
+
+/* Header */
+
+.outer-logo {
+	grid-column: 1 / 13;
+	width: 100%;
+	grid-row: 1 / 2;
+}
+
+.logo {
+	display: inline-block; 
+}
+
+.menu {
+	grid-column: 2 / 13;
+	grid-row: 1 / 2;
+	line-height: 7.5
+}
+
+.menu h5 {
+	text-align: right;
+	padding-right: 30px;
+	color: white;
+	background-color: transparent;
+}
+
+.header_shade_box {
+  background-color: rgba(6, 2, 25, 0.478);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100px;
+  z-index: -1;
+}
+
+/* All Pages */
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: auto;
+	grid-gap: 10px;
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Home Page */
+
+.big-logo {
+	grid-column: 1 / 13;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	margin-top: 90px;
+}
+
+.subscribe-button {
+	grid-column: 1 / 13;
+	border-radius: 10px;
+  	border: 2px solid white;
+  	padding: 0px; 
+  	width: 349px;
+  	height: 67px; 
+  	margin: auto;
+  	margin-top: 12px;
+  	text-align: center;
+  	line-height: 4.2
+}
+
+/* About Page */
+
+.about-us {
+	grid-column: 1 / 13;
+	grid-row: 4 / 7;
+	border-radius: 10px;
+  	border: 0px;
+  	background-color: rgba(6, 2, 25, 0.478);
+  	padding: 10px; 
+  	width: 680px;
+  	height: 380px; 
+  	margin: auto;
+  	text-align: justify;
+  	line-height: 1.6
+}
+
+.about-us h1 {
+	text-align: center;
+	line-height: 2
+}
+
+/* Testing Page */
+
+.testing-guide {
+	grid-column: 1 / 13;
+	display: flex;
+    flex-direction: column;
+	margin: auto;
+	text-align: center;
+}
+
+.topnav{
+	grid-column: 1 / 13;
+	display: flex;
+    flex-direction: column;
+	margin: auto;
+	text-align: center;
+}
+
+.strain-list {
+	width: 100%;
+	margin: auto;
+	grid-column: 1 / 13;
+	text-align: center;
+	line-height: 2
+}
+
+.strain-list h1 {
+	line-height: 2.5
+}
+
+.strain-list h2 {
+	line-height: 2.5
+}
+
+/* Contact Page */
+
+.contact-us {
+	grid-column: 1 / 13;
+	border-radius: 10px;
+  	border: 0px;
+  	background-color: rgba(6, 2, 25, 0.478);
+  	padding: 10px; 
+  	width: 640px;
+  	height: 120px; 
+  	margin: auto;
+  	text-align: center;
+  	line-height: 2
+}
+
+/* Vertical Spacer */
+
+.blank-block {
+	grid-column: 1 / 13;
+	margin: auto;
+	height: 100px;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: underline
+}
+
+/* selected link */
+a:active {
+  color: black;
+  background-color: white;
+}
+
+/* ------------------MEDIA QUERIES--------------------------------------------------------------------- */
+
+/* Tablet Screen */
+@media screen and (max-width: 900px){
+
+/* Contact Page */
+
+.contact-us {
+  	width: 540px;
+}
+}
+	
+
+/* Phone Screen */
+@media screen and (max-width: 620px){
+
+.header_shade_box {
+  height: 150px;
+}
+
+.blank-block {
+	grid-column: 1 / 13;
+	margin: auto;
+	height: 60px;
+}
+
+.outer-logo {
+	text-align: center;
+}
+
+.menu {
+	grid-column: 1 / 13;
+	grid-row: 2 / 3;
+	line-height: 1.3
+}
+
+.menu h5 {
+	text-align: center;
+	padding-right: 0px;
+}
+
+/* Home Page */
+
+
+/* About Page */
+
+.about-us {
+  	width: 90%;
+  	height: 770px; 
+}
+
+/* Testing Page */
+
+.testing-guide {
+	width: 90%;
+}
+
+.topnav{
+	width: 90%;
+}
+
+.strain-list {
+	width: 90%;
+}
+
+/* Contact Page */
+
+.contact-us {
+  	width: 90%;
+  	font-size: 3vw;
+  	height: 20vw;
+}
+
+}
+
+/* Galaxy Screen */
+@media screen and (max-width: 444px){
+
+/* Header */
+.menu a {
+	display: block;
+}
+
+.header_shade_box {
+  height: 383px;
+}
+
+.menu h5 {
+	font-size: 15px;
+	line-height: 2
+}
+
+/* Home Page */
+
+.big-logo {
+	visibility: hidden;
+}
+
+.subscribe-button {
+	grid-row: 3 / 4;
+  
+}
+
+.subscribe-button h4 {
+	font-size: 15px;
+}
+
+/*About Us Page*/
+
+.about-us {
+  	grid-row: 3 / 4;
+}
+
+/*Contact Us Page*/
+
+.contact-us {
+	grid-row: 3 / 4;
+}
+}
+
+
+
+
