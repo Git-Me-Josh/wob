@@ -14,6 +14,21 @@
 		    background-repeat: no-repeat;
 		    background-position: center top;
 		    background-attachment: fixed;
+		}
+
+		.flexbox-main-container {
+			display: flex;
+	    	flex-wrap: wrap;
+	    	justify-content: center;
+		}
+
+		.flexbox-container {
+			width: 426px;
+			height: 240px;
+			margin: 8px;
+	    	display: flex;
+	    	flex-wrap: wrap;
+	    	justify-content: center;
 	    }
 
 	    .flex-img  {
@@ -22,18 +37,53 @@
 	    	margin: 8px;
 	    	transition: all 1s;
 	    	image-orientation: from-image;
-	    }
+		}
 
-	    .flex-img:hover {
-	    	transform: scale(1.07);
-	    }
+		.flex-img:hover {
+			transform: scale(1.1)
+		}
 
-	    .flexbox-container {
-	    	display: flex;
-	    	flex-wrap: wrap;
-	    	justify-content: center;
-	    }
+	    .flexbox-container:hover .overlay {
+	    	opacity: .75;
+		}
 
+		.overlay {
+			position: relative;
+			top: -248px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: white;
+			transform: scale(1.1);
+		}
+
+		.text {
+			color: black;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+  			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		p {
+			margin: 0 auto;
+			max-width: 420px;
+			padding: 0px;
+		}
+
+		.overflow {
+			width: 420px;
+			word-wrap: break-word;
+			hyphens: auto;
+		}
 	</style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -79,23 +129,118 @@
 	</header>
 
 		<!-- body section -->
-		
+	<div class="flexbox-main-container">	
 		<div class="flexbox-container">
 			<img class="flex-img" src="img/wob-pics/showcase-bud-9lb-hammer.jpg">
+			<div class="overlay">
+					<div class="text">
+						<p class="overflow">
+							9lb Hammer is an indica dominant hybrid known for "hitting like a hammer". 
+							This strain start with an euphoric, uplifting high before transitioning to a relaxing, couch-locked sedation. Best saved for the end of your day! 
+						</p>
+					</div>
+				</div>
+			</div>
+		<div class="flexbox-container">
 			<img class="flex-img" src="img/wob-pics/showcase-bud-gdp.jpg">
-			<img class="flex-img" src="img/wob-pics/showcase-bud-platinum-cookies.jpg">
-			<img class="flex-img" src="img/wob-pics/showcase-bud-sirius-black.jpg">
-			<img class="flex-img" src="img/wob-pics/showcase-bud-707-headband.jpg">
-			<img class="flex-img" src="img/wob-pics/showcase-bud-strawberry-diesel.jpg">
-			<img class="flex-img" src="img/wob-pics/showcase-bud-super-glue.jpg">
-			<img class="flex-img" src="img/wob-pics/showcase-bud-waikiki-queen.jpg">
-			<img class="flex-img" src="img/wob-pics/wob-img-1.jpg">
-			<!-- <img class="flex-img" src="img/wob-pics/wob-img-2.jpg"> -->
-			<img class="flex-img" src="img/wob-pics/wob-img-3.jpg">
-			<img class="flex-img" src="img/wob-pics/wob-img-4.jpg">
-			<img class="flex-img" src="img/wob-pics/wob-img-5.jpg">
-			
+			<div class="overlay">
+				<div class="text">
+					<p class="overflow">
+						Grand Daddy Purple is a potent indica that will give you cerebral euphoria, while keeping your body completely relaxed. 
+						Commonly used to help with insomnia, appetite loss, pain, stress, and even muscle spasms, GDP is not a stain to miss out on. 
+					</p>
+				</div>
+			</div>
 		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/showcase-bud-platinum-cookies.jpg">
+			<div class="overlay">
+				<div class="text">
+					<p class="overflow">
+						Platinum Cookies smells like candy and tastes just as sweet. This frosty, balanced hybrid leaves you feeling uplifted with ease.
+						Great for easing the anxiety, without the couch locking experience. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/showcase-bud-sirius-black.jpg">
+			<div class="overlay">
+				<div class="text">
+					<p class="overflow">
+						This beautifully deep purple strain is a fan favorite! 
+						Sirius Black is an indica dominant strain best for those who want that full body effect without being locked in one place for the duration. Known to help with chronic pain and fatigue.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/showcase-bud-707-headband.jpg">
+			<div class="overlay">
+				<div class="text">
+					<p class="overflow">
+						If you are looking for a potently creative strain than look no further than 707 Headband! This pungent strain will give that spark of creativity without
+						leaving you feeling wired. Wonderful for artists needing some inspiration!  
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/showcase-bud-strawberry-diesel.jpg">
+			<div class="overlay">
+				<div class="text">
+					<p class="overflow">
+						Strawberry Diesel is a perfectly balanced hybrid for both day and night use. Needing to be productive, relax the mind, or maybe a little of both?
+						This sweet and diesel flavored strain is a must to check out.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/showcase-bud-super-glue.jpg">
+			<div class="overlay">
+				<div class="text">
+					<p class="overflow">
+						This strain is best recognized for its more medicinal properites with limited cerebal effects. Super Glue tends to carry higher CBD percentages than your average strain.
+						Perfect for people seeking out relief for pain, or stress wihtout giving them much of a couch locking or head high. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/showcase-bud-waikiki-queen.jpg">
+			<div class="overlay">
+				<div class="text">
+					<p class="overflow">
+						Missing those white sandy beaches? Then Waikiki Queen is the tropical blend to help you with the Oregon rain. This sativa dominant strain will give you 
+						the energy boost you have been looking for, while transporting your body to relaxing on a sunny beach.  
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/wob-img-1.jpg">
+		</div>
+			<!-- <img class="flex-img" src="img/wob-pics/wob-img-2.jpg"> -->
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/wob-img-3.jpg">
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/wob-img-4.jpg">
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/wob-img-5.jpg">
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/wob-img-6.jpg">
+		</div>
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/wob-img-7.jpg">
+		</div>	
+		<div class="flexbox-container">
+			<img class="flex-img" src="img/wob-pics/wob-img-8.jpg">
+		</div>
+	</div>
 
 </div>		
 </body>
